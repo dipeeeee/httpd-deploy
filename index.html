@@ -1,152 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F1 Racing</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: #0b0b0b;
-            color: white;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F1 World</title>
 
-        header {
-            background: linear-gradient(90deg, red, black);
-            padding: 20px;
-            text-align: center;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0b0b;
+    color: white;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 40px;
-            letter-spacing: 2px;
-        }
+header {
+    background: linear-gradient(90deg, red, black);
+    text-align: center;
+    padding: 20px;
+}
 
-        nav {
-            background: #111;
-            padding: 12px;
-            text-align: center;
-        }
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+nav {
+    background: #111;
+    text-align: center;
+    padding: 10px;
+}
 
-        nav a:hover {
-            color: red;
-        }
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        .hero {
-            background: url('https://images.unsplash.com/photo-1606925797300-0f6c58cfa52c') no-repeat center/cover;
-            height: 500px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 50px;
-            font-weight: bold;
-            text-shadow: 2px 2px 10px black;
-        }
+nav a:hover {
+    color: red;
+}
 
-        .section {
-            padding: 40px;
-            text-align: center;
-        }
+.hero {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/3/3e/Formula_One_car_2022.jpg') no-repeat center/cover;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px black;
+}
 
-        .cards {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
+.section {
+    padding: 40px;
+    text-align: center;
+}
 
-        .card {
-            background: #1a1a1a;
-            margin: 15px;
-            padding: 20px;
-            width: 280px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(255,0,0,0.5);
-            transition: transform 0.3s;
-        }
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
-        .card:hover {
-            transform: scale(1.05);
-        }
+.card {
+    background: #1a1a1a;
+    margin: 15px;
+    padding: 15px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255,0,0,0.5);
+    transition: 0.3s;
+}
 
-        .card img {
-            width: 100%;
-            border-radius: 10px;
-        }
+.card:hover {
+    transform: scale(1.05);
+}
 
-        .card h3 {
-            margin-top: 10px;
-        }
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
 
-        footer {
-            background: #111;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-        }
-    </style>
+footer {
+    background: #111;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+
 </head>
+
 <body>
 
 <header>
-    <h1>🏎️ F1 RACING WORLD</h1>
-    <p>Speed • Power • Precision</p>
+    <h1>🏎️ F1 WORLD</h1>
+    <p>Speed • Power • Champions</p>
 </header>
 
 <nav>
     <a href="#">Home</a>
-    <a href="#">Teams</a>
+    <a href="#">Cars</a>
     <a href="#">Drivers</a>
-    <a href="#">Contact</a>
 </nav>
 
 <div class="hero">
     Feel the Speed of Formula 1
 </div>
 
+<!-- CARS SECTION -->
 <div class="section">
-    <h2>Top Teams</h2>
+    <h2>🔥 F1 Cars</h2>
     <div class="cards">
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1603386329225-868f9b1ee6b6">
-            <h3>Red Bull Racing</h3>
-            <p>Dominating the grid with speed and strategy.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Red_Bull_Racing_F1_Car.jpg">
+            <h3>Red Bull Car</h3>
         </div>
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1593941707882-a56bbc8df2d1">
-            <h3>Ferrari</h3>
-            <p>Legendary performance and iconic design.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Ferrari_F1_Car.jpg">
+            <h3>Ferrari Car</h3>
         </div>
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1612197521918-2c31f0e5bb5c">
-            <h3>Mercedes AMG</h3>
-            <p>Engineering excellence and dominance.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Mercedes_F1_Car.jpg">
+            <h3>Mercedes Car</h3>
         </div>
 
     </div>
 </div>
 
+<!-- DRIVERS SECTION -->
 <div class="section">
-    <h2>Why F1?</h2>
-    <p>
-        Formula 1 is the pinnacle of motorsport, combining cutting-edge technology,
-        world-class drivers, and thrilling races across the globe.
-    </p>
+    <h2>🏁 Top Drivers</h2>
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Max_Verstappen_2022.jpg">
+            <h3>Max Verstappen</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Lewis_Hamilton_2022.jpg">
+            <h3>Lewis Hamilton</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Charles_Leclerc_2022.jpg">
+            <h3>Charles Leclerc</h3>
+        </div>
+
+    </div>
 </div>
 
 <footer>
-    <p>© 2026 F1 Racing | Powered by Jenkins Deployment 🚀</p>
+    <p>© 2026 F1 World | Deployed using Jenkins 🚀</p>
 </footer>
 
 </body>
