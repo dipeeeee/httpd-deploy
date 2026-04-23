@@ -3,64 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car World</title>
+    <title>F1 Racing</title>
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Segoe UI', sans-serif;
+            background: #0b0b0b;
+            color: white;
         }
+
         header {
-            background: #111;
-            color: #fff;
-            padding: 15px;
+            background: linear-gradient(90deg, red, black);
+            padding: 20px;
             text-align: center;
         }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+            letter-spacing: 2px;
+        }
+
         nav {
-            background: #e8491d;
-            padding: 10px;
+            background: #111;
+            padding: 12px;
             text-align: center;
         }
+
         nav a {
-            color: #fff;
+            color: white;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
         }
+
+        nav a:hover {
+            color: red;
+        }
+
         .hero {
-            background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') no-repeat center center/cover;
-            height: 400px;
-            color: white;
+            background: url('https://images.unsplash.com/photo-1606925797300-0f6c58cfa52c') no-repeat center/cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px black;
+        }
+
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .cards {
             display: flex;
             justify-content: center;
-            align-items: center;
-            font-size: 40px;
-            font-weight: bold;
-        }
-        .container {
-            padding: 20px;
-            text-align: center;
-        }
-        .cars {
-            display: flex;
-            justify-content: space-around;
             flex-wrap: wrap;
         }
-        .car {
-            background: white;
-            padding: 15px;
-            margin: 10px;
-            width: 250px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+        .card {
+            background: #1a1a1a;
+            margin: 15px;
+            padding: 20px;
+            width: 280px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255,0,0,0.5);
+            transition: transform 0.3s;
         }
-        .car img {
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
             width: 100%;
+            border-radius: 10px;
         }
+
+        .card h3 {
+            margin-top: 10px;
+        }
+
         footer {
             background: #111;
-            color: #fff;
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             margin-top: 20px;
         }
     </style>
@@ -68,48 +97,56 @@
 <body>
 
 <header>
-    <h1>🚗 Car World</h1>
-    <p>Explore Luxury & Performance Cars</p>
+    <h1>🏎️ F1 RACING WORLD</h1>
+    <p>Speed • Power • Precision</p>
 </header>
 
 <nav>
     <a href="#">Home</a>
-    <a href="#">Cars</a>
-    <a href="#">About</a>
+    <a href="#">Teams</a>
+    <a href="#">Drivers</a>
     <a href="#">Contact</a>
 </nav>
 
 <div class="hero">
-    Drive Your Dream Car
+    Feel the Speed of Formula 1
 </div>
 
-<div class="container">
-    <h2>Featured Cars</h2>
-    <div class="cars">
+<div class="section">
+    <h2>Top Teams</h2>
+    <div class="cards">
 
-        <div class="car">
-            <img src="https://images.unsplash.com/photo-1549924231-f129b911e442" alt="Car 1">
-            <h3>Sports Car</h3>
-            <p>High speed and performance.</p>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1603386329225-868f9b1ee6b6">
+            <h3>Red Bull Racing</h3>
+            <p>Dominating the grid with speed and strategy.</p>
         </div>
 
-        <div class="car">
-            <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a" alt="Car 2">
-            <h3>Luxury Car</h3>
-            <p>Comfort and elegance.</p>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1593941707882-a56bbc8df2d1">
+            <h3>Ferrari</h3>
+            <p>Legendary performance and iconic design.</p>
         </div>
 
-        <div class="car">
-            <img src="https://images.unsplash.com/photo-1493238792000-8113da705763" alt="Car 3">
-            <h3>SUV</h3>
-            <p>Powerful and spacious.</p>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1612197521918-2c31f0e5bb5c">
+            <h3>Mercedes AMG</h3>
+            <p>Engineering excellence and dominance.</p>
         </div>
 
     </div>
 </div>
 
+<div class="section">
+    <h2>Why F1?</h2>
+    <p>
+        Formula 1 is the pinnacle of motorsport, combining cutting-edge technology,
+        world-class drivers, and thrilling races across the globe.
+    </p>
+</div>
+
 <footer>
-    <p>© 2026 Car World | Designed for Jenkins Deployment 🚀</p>
+    <p>© 2026 F1 Racing | Powered by Jenkins Deployment 🚀</p>
 </footer>
 
 </body>
